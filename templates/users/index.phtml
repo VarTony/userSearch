@@ -1,0 +1,15 @@
+<a href="/users">Все Пользователи</a>
+
+
+
+<form action='/users' method='get'>
+    <input type='search' name='term' required value='<?= htmlspecialchars($term) ?>'/>
+    <input type="submit" value="Search" />
+</form>
+<ul>
+<li> <?= json_encode($paramse) ?> </li>
+<li> Id         : <?= json_encode($user["id"]) ?> </li>
+<li> First Name : <?= json_encode($user["firstName"]) ?> </li>
+<li> Last Name  : <?= json_encode($user["lastName"]) ?> </li>
+<li> Email      : <?= json_encode($user["email"]) ?> </li>
+ </ul>
